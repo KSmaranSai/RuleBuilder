@@ -53,7 +53,7 @@ app.get('/secondPage', (req, res) => {
 });
 
 app.get('/login',(req,res)=>{
-  console.log("Login");
+  res.sendFile(path.join(__dirname, 'login.html'));
 });
 
 app.listen(port, () => {
